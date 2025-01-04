@@ -1,6 +1,7 @@
 from scraper import get_clean_text
 from summarizer import summarize_text
 
+
 def summarize_website(url):
     print("Extraction du contenu du site...")
     text = get_clean_text(url)

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Scraper et Résumeur</title>
+</head>
+<body>
+    <h1>Bienvenue sur le Web Scraper et Résumeur</h1>
+    <form method="POST">
+        <label for="url">Entrez une URL :</label>
+        <input type="text" id="url" name="url" placeholder="http://example.com">
+        <button type="submit">Analyser</button>
+    </form>
+
+    {% if summary %}
+        <h2>Résumé du texte :</h2>
+        <p>{{ summary }}</p>
+    {% endif %}
+
+    {% if url %}
+        <p>URL analysée : {{ url }}</p>
+    {% endif %}
+</body>
+</html>
